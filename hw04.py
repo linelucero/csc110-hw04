@@ -1,16 +1,22 @@
 # ------------------------------------------------------
-#        Name: (put your name here)
+#        Name: Aline Valenzuela-Lucero
 #       Peers: (add any collaborators)
 #  References: (anything you checked to solve this)
 # ------------------------------------------------------
 import sys
 
 secret_word = "food"
+secret_word_2 = "Food"
 
 # Task 1
 def check_text():
     """ Add your docstring """
-    pass
+    sentence = input("Give me a sentence:")
+    while secret_word not in sentence and secret_word_2 not in sentence:
+        print("Try again")
+        sentence = input("Give me another sentence:")
+    print(f"You used the secret word!")
+        
 
 
 
