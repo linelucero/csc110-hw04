@@ -10,12 +10,14 @@ secret_word_2 = "Food"
 
 # Task 1
 def check_text():
-    """ Add your docstring """
-    sentence = input("Give me a sentence:")
-    while secret_word not in sentence and secret_word_2 not in sentence:
+    """ The code will ask the user to input a sentence. If the sentence does not contain the either secret word
+        the while loop will cycle back and have the user try again. If the user managed to use the
+        secret word, then the code will print that they used the seceret word."""
+    sentence = input("Give me a sentence:") #user input
+    while secret_word not in sentence and secret_word_2 not in sentence: #while loop that will cycle till the word is used
         print("Try again")
         sentence = input("Give me another sentence:")
-    print(f"You used the secret word!")
+    print(f"You used the secret word!") #result to using the secret word
         
 
 
